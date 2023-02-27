@@ -1,103 +1,135 @@
-.home-main-div{
-    background: #b993d6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b993d6, #8ca6db); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b993d6, #8ca6db)
+img{
+  -ms-transform: translateZ(0); /* IE 9 */
+  -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+  transform: translateZ(0);
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering:   -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
-.navbar {
-    padding: 20px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    padding-top: 40px;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-  }
-  
-  .navbar li {
-    display: inline-block;
-    margin-left: 60px;
-  }
-  
-  .navbar a {
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+.main-div{
+  display: flex;
+  overflow-x: hidden;
+}
 
-  }
-  
-  .navbar a:hover {
-    color: #f00;
-  }
-  
-  .fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-  }
+.left-nav{
+  background-color: #040B14;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  padding-top: 20px;
+  color: white;
+  display: none;
+}
 
-  .short-details{
-    display: flex;
-    margin-left: 80px;
-    color: white;
-    align-items: flex-start;
+.myImg{
+  background-image: url("../../assets/2.png");
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 8px solid #2C2F3F;
+}
 
-  }
-  .card {
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    height: 400px;
-    background-image: url("../../assets/2.png");
-    background-size: cover;
-    height: 350px;
-    width: 250px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    top: 50px;
-  }
-  
-  .card img {
-    display: block;
-    width: 90%;
-  }
-  
-  .text-wrapper {
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
+.socialIcons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialIcons a{
+  color: white;
+}
+.socialIcons a:hover{
+  color: white;
+}
 
-  .name{
-    font-size: 40px;
-    margin-bottom: 0px;
-    font-weight: bolder;
-    letter-spacing: 0.1em;
+.facebook:hover{
+  background-color: dodgerblue !important;
+  transition: 0.5s ease-in;
+}
+.linkedin:hover{
+  background-color: dodgerblue !important;
+  transition: 0.5s ease-in;
+}
+.github:hover{
+  background-color: dodgerblue !important;
+  transition: 0.3s ease-in;
+}
+.linking ul li{
+  list-style: none;
+  color: rgb(168, 168, 168);
+  margin-top: 30px;
+  cursor: pointer;
+}
 
-  }
-  .role{
-    font-weight: 600;
-  }
+.homeIcon,.servicesIcon,.userIcon,.contactIcon{
+  font-size: 30px;
+  margin-right: 5px;
+}
 
-  .bio{
-    display: flex;
-    flex-direction: column;
-  }
+.linking ul li:hover {
+  color: white;
+}
 
-  .age,.phone,.email,.address{
-    display: flex;
-  }
+.linking ul li:hover .homeIcon{
+  color: dodgerblue;
+}
+.linking ul li:hover .userIcon{
+  color: dodgerblue;
+}
+.linking ul li:hover .servicesIcon{
+  color: dodgerblue;
+}
+.linking ul li:hover .contactIcon{
+  color: dodgerblue;
+}
 
- 
- 
- 
+nav li.active .homeIcon {
+  color: dodgerblue
+}
+nav li.active .userIcon {
+  color: dodgerblue
+}
+
+
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background-image: url("https://images.unsplash.com/photo-1448067686092-1f4f2070baae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.home{
+  height: 100vh;
+  display: flex;
+
+
+}
+
+
+.mySelf{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about{
+  background:white;
+  height:100vh;
+  width:100%;
+  padding-left: 40px;
+}
+

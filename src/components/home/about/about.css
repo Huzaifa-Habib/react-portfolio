@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+.about-content-div{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.myInfo{
+    display: flex;
+
+}
+
+.textWrapper{
+    padding-left: 20px;
+}
+.textWrapper h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+.skill-compo{
+    margin-top: 80px;
+}
