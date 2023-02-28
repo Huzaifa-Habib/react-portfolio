@@ -24,7 +24,10 @@ img{
   padding-top: 20px;
   color: white;
   display: none;
+  z-index: 999 !important;
 }
+
+
 
 .myImg{
   background-image: url("../../assets/2.png");
@@ -69,7 +72,7 @@ img{
   cursor: pointer;
 }
 
-.homeIcon,.servicesIcon,.userIcon,.contactIcon{
+.homeIcon,.servicesIcon,.userIcon,.contactIcon,.projectIcon{
   font-size: 30px;
   margin-right: 5px;
 }
@@ -90,6 +93,9 @@ img{
 .linking ul li:hover .contactIcon{
   color: dodgerblue;
 }
+.linking ul li:hover .projectIcon{
+  color: dodgerblue;
+}
 
 nav li.active .homeIcon {
   color: dodgerblue
@@ -97,6 +103,14 @@ nav li.active .homeIcon {
 nav li.active .userIcon {
   color: dodgerblue
 }
+
+nav li.active .servicesIcon {
+  color: dodgerblue
+}
+nav li.active .projectIcon {
+  color: dodgerblue
+}
+
 
 
 
@@ -112,8 +126,6 @@ nav li.active .userIcon {
 .home{
   height: 100vh;
   display: flex;
-
-
 }
 
 
@@ -128,8 +140,52 @@ nav li.active .userIcon {
 
 #about{
   background:white;
-  height:100vh;
   width:100%;
   padding-left: 40px;
 }
+
+#services{
+  background:white;
+  width:100%;
+  padding-left: 40px;
+}
+#projects{
+  background:white;
+  width:100%;
+  padding-left: 40px;
+}
+
+@media screen and (min-width:1200px) {
+  .left-nav{
+    display: block;
+  }
+
+  .canvasIcon{
+    display: none !important;
+  }
+
+  .main-content{
+    padding-left: 280px;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  #about,#services,#projects{
+    padding-left: 0px;
+  }
+  .nameHead{
+    font-size: 40px !important;
+  }
+  .typeWriter{
+    font-size: 20px !important;
+
+
+  }
+  
+
+}
+
+
+
 

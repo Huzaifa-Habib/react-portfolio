@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+
+.projects-main-div{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 80px;
+    background-color: white !important;
+    
+}
+/* .projects-content-div{
+    padding-bottom: 64px !important;
+
+
+} */
+
+.project-head{
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.project-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-color: white;
+    height: 450px !important;
+    
+}
+
+.project-card img{
+    margin: 0px;
+    padding: 0px;
+}
